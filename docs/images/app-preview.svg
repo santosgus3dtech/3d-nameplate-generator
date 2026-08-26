@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">3D Nameplate Generator app preview</title>
+  <desc id="desc">Mock screenshot of the 3D nameplate generator web app with form controls, preview area and generated file output.</desc>
+  <rect width="1120" height="620" rx="18" fill="#eef2f7"/>
+  <rect x="44" y="42" width="1032" height="536" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="44" y="42" width="1032" height="62" rx="14" fill="#111827"/>
+  <circle cx="76" cy="73" r="8" fill="#ef4444"/>
+  <circle cx="104" cy="73" r="8" fill="#f59e0b"/>
+  <circle cx="132" cy="73" r="8" fill="#22c55e"/>
+  <text x="170" y="80" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" font-weight="800" fill="#f9fafb">3D Nameplate Generator</text>
+
+  <rect x="82" y="142" width="360" height="380" rx="12" fill="#f8fafc" stroke="#d1d5db"/>
+  <text x="112" y="184" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800" fill="#111827">Custom plate</text>
+  <text x="112" y="222" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" fill="#64748b">Name</text>
+  <rect x="112" y="238" width="282" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="130" y="266" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" fill="#111827">Gustavo</text>
+  <text x="112" y="318" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" fill="#64748b">QR content</text>
+  <rect x="112" y="334" width="282" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="130" y="362" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" fill="#111827">github.com/santosgus3dtech</text>
+  <rect x="112" y="414" width="60" height="36" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+  <rect x="190" y="414" width="60" height="36" rx="8" fill="#111827"/>
+  <rect x="112" y="474" width="282" height="48" rx="9" fill="#2563eb"/>
+  <text x="186" y="505" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="800" fill="#ffffff">Generate .3mf</text>
+
+  <rect x="492" y="142" width="540" height="380" rx="12" fill="#0f172a" stroke="#111827"/>
+  <rect x="536" y="194" width="452" height="236" rx="18" fill="#f8fafc"/>
+  <rect x="568" y="224" width="388" height="60" rx="10" fill="#e2e8f0"/>
+  <text x="648" y="264" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="34" font-weight="900" fill="#111827">GUSTAVO</text>
+  <rect x="684" y="318" width="150" height="150" fill="#ffffff" stroke="#111827" stroke-width="4"/>
+  <g fill="#111827">
+    <rect x="704" y="338" width="24" height="24"/><rect x="728" y="338" width="24" height="24"/><rect x="776" y="338" width="24" height="24"/><rect x="824" y="338" width="24" height="24"/>
+    <rect x="704" y="386" width="24" height="24"/><rect x="752" y="386" width="24" height="24"/><rect x="800" y="386" width="24" height="24"/>
+    <rect x="728" y="434" width="24" height="24"/><rect x="776" y="434" width="24" height="24"/><rect x="824" y="434" width="24" height="24"/>
+  </g>
+  <text x="536" y="482" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" fill="#cbd5e1">FastAPI + OpenSCAD + Three.js + 3MF packaging</text>
+</svg>

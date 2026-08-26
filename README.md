@@ -2,6 +2,8 @@
 
 FastAPI web app for generating personalized 3D nameplates with real QR codes, a Three.js preview and `.3mf` export for multicolor workflows in slicers such as Bambu Studio and OrcaSlicer.
 
+![App preview](docs/images/app-preview.svg)
+
 ## What It Shows
 
 - Python/FastAPI backend returning generated files on demand.
@@ -52,4 +54,4 @@ templates/          # Tela principal
 
 ## Portfolio
 
-This project is a strong portfolio piece because it combines backend work, 3D geometry, technical file packaging and an interactive UI in a small, clear and demonstrable product. See [docs/portfolio-case-study.md](docs/portfolio-case-study.md).
+This project is a strong portfolio piece because it combines backend work, 3D geometry, technical file packaging and an interactive UI in a small, clear and demonstrable product. The repository also includes a GitHub Actions test workflow for core geometry/file-safety helpers. See [docs/portfolio-case-study.md](docs/portfolio-case-study.md).
