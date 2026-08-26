@@ -1,15 +1,15 @@
-# Gerador Web de Plaquinhas 3D
+# 3D Nameplate Generator
 
-Aplicacao FastAPI para gerar plaquinhas 3D personalizadas com nome, QR Code real, preview em Three.js e exportacao `.3mf` para fluxo multicolor em slicers como Bambu Studio e OrcaSlicer.
+FastAPI web app for generating personalized 3D nameplates with real QR codes, a Three.js preview and `.3mf` export for multicolor workflows in slicers such as Bambu Studio and OrcaSlicer.
 
-## O que o projeto mostra
+## What It Shows
 
-- Backend Python/FastAPI retornando arquivos gerados sob demanda.
-- Geracao parametrica com OpenSCAD.
-- QR Code convertido em blocos 3D reais com `segno`.
-- Montagem manual de pacote `.3mf` com partes e cores separadas.
-- Frontend com preview 3D interativo em Three.js.
-- Projeto pensado para uso real em um pequeno fluxo de personalizacao/3D printing.
+- Python/FastAPI backend returning generated files on demand.
+- Parametric geometry generation with OpenSCAD.
+- QR codes converted into real 3D blocks with `segno`.
+- Manual `.3mf` package assembly with separated parts and colors.
+- Interactive 3D preview built with Three.js.
+- A small, practical customization workflow for real 3D-printing use.
 
 ## Stack
 
@@ -18,15 +18,15 @@ Aplicacao FastAPI para gerar plaquinhas 3D personalizadas com nome, QR Code real
 - segno, trimesh, numpy
 - HTML, CSS, JavaScript, Three.js
 
-## Rodando localmente
+## Running Locally
 
-Instale o OpenSCAD e, se ele estiver fora do caminho padrao no Windows, defina:
+Install OpenSCAD and, if it is outside the default Windows path, set:
 
 ```powershell
 $env:OPENSCAD_PATH = "C:\Program Files\OpenSCAD\openscad.exe"
 ```
 
-Depois:
+Then:
 
 ```bash
 python -m venv .venv
@@ -35,21 +35,21 @@ python -m pip install -r requirements.txt
 python -m uvicorn app:app --reload
 ```
 
-Acesse `http://127.0.0.1:8000`.
+Open `http://127.0.0.1:8000`.
 
-## Estrutura
+## Structure
 
 ```text
-app.py              # Rotas web e download do .3mf
-gerador_3mf.py      # Geracao de STL temporario e pacote .3mf
+app.py              # Web routes and .3mf download
+gerador_3mf.py      # Temporary STL generation and .3mf package assembly
 modelo_base.scad    # Base parametrica
 modelo_nome.scad    # Texto em relevo
 static/             # Preview 3D e estilos
 templates/          # Tela principal
 ```
 
-`saida_3mf/` e `temp/` sao gerados em runtime e ficam fora do Git.
+`saida_3mf/` and `temp/` are generated at runtime and stay out of Git.
 
 ## Portfolio
 
-Este projeto e uma boa vitrine porque junta backend, geometria 3D, empacotamento de arquivo tecnico e UI interativa em um produto pequeno, claro e demonstravel. Veja [docs/portfolio-case-study.md](docs/portfolio-case-study.md).
+This project is a strong portfolio piece because it combines backend work, 3D geometry, technical file packaging and an interactive UI in a small, clear and demonstrable product. See [docs/portfolio-case-study.md](docs/portfolio-case-study.md).
