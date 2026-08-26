@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Gerador de Plaquinhas 3D</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <main class="layout">
+        <section class="painel">
+            <h1>Gerador de Plaquinha 3D</h1>
+            <p class="subtitulo">Personalize nome, QR Code e cores antes de gerar o arquivo .3mf.</p>
+
+            <form id="formulario" method="post" action="/gerar">
+                <label>
+                    Nome na plaquinha
+                    <input id="nome" name="nome" type="text" value="Imagine3D" maxlength="24" required />
+                </label>
+
+                <label>
+                    Conteúdo do QR Code
+                    <input id="qr" name="qr" type="text" value="https://instagram.com/imagine3d" required />
+                </label>
+
+                <div class="linha">
+                    <label>
+                        Cor da plaquinha
+                        <input id="cor_placa" name="cor_placa" type="color" value="#ffffff" />
+                    </label>
+
+                    <label>
+                        Cor do nome/QR
+                        <input id="cor_detalhe" name="cor_detalhe" type="color" value="#111111" />
+                    </label>
+                </div>
+
+                <label>
+                    Tamanho do QR
+                    <input id="qr_tamanho" name="qr_tamanho" type="range" min="42" max="70" value="58" />
+                    <span id="qr_valor">58 mm</span>
+                </label>
+
+                <button type="submit">Gerar arquivo .3mf</button>
+            </form>
+
+            <div class="dicas">
+                <strong>Dica:</strong> para QR Code funcionar bem, use base clara e QR escuro.
+            </div>
+        </section>
+
+        <section class="preview">
+            <div id="canvas-container"></div>
+        </section>
+    </main>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+
+    <script type="module" src="/static/script.js"></script>
+</body>
+</html>

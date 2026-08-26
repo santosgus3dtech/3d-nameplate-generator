@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+saida_3mf/
+temp/
+*.3mf
+*.stl
+.env
+.env.*
