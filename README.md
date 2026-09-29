@@ -2,7 +2,13 @@
 
 FastAPI web app for generating personalized 3D nameplates with real QR codes, a Three.js preview and `.3mf` export for multicolor workflows in slicers such as Bambu Studio and OrcaSlicer.
 
-![App preview](docs/images/app-preview.svg)
+## Screenshot
+
+![3D Nameplate Generator web interface with interactive Three.js preview](docs/screenshots/web-interface.png)
+
+The live preview updates the name, QR code, colors and dimensions before the `.3mf` file is generated.
+
+![Application flow](docs/images/app-preview.svg)
 
 ## What It Shows
 
